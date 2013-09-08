@@ -2,7 +2,7 @@ import os
 
 from optparse import OptionParser
 
-BOOK_PATH = "latex/books"
+BOOK_PATH = "books"
 DEFAULT_REPLACEMENTS_FILE = "default_replacements.txt"
 
 def loadText(text_filename):
