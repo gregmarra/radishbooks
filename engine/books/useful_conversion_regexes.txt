@@ -1,0 +1,56 @@
+= Useful regex replaces = 
+
+These regex replaces helped translate Gutenberg books into syntax that compiles into LaTeX cleanly. These were helpful for many books.
+
+NOTE: Using "Ruby" syntax, \1 is the first backreference to a capture group.
+
+== Replacements ==
+
+Don't forget to replace poly-word things with whitespace wildcards to catch linebreaks! Do a followup search to make sure you caught everything!
+
+== Italics ==
+
+_(.*?)_
+
+to
+
+\\textit{\1}
+
+== Chapter Headers ==
+
+(CHAPTER.*)\n
+
+to
+
+\\chapter\*{\1}
+
+== Embedded Images ==
+
+^{(.*): (.*)}
+
+to
+
+\\begin{figure*}[htp]
+  \\centering
+  \\includegraphics{\2}
+  \\end{center}
+  \\caption{\1}
+\\end{figure*}
+
+== Quotes ==
+
+^"
+to
+``
+
+ "
+to
+ ``
+
+"$
+to
+''
+
+" 
+to
+'' 

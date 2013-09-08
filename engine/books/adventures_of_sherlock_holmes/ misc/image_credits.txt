@@ -1,0 +1,7 @@
+= Image Credits =
+
+holmes_adventures.png
+http://en.wikipedia.org/wiki/File:Holmes_Adventures.jpg
+
+holmes.png
+http://upload.wikimedia.org/wikipedia/commons/7/73/Paget_holmes.png
